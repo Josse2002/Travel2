@@ -1,0 +1,322 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.barra{
+    background: rgb(4, 6, 20);
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: white;
+    padding-top: 5px;
+}
+.links{
+    margin-left: 10px;
+}
+.links a{
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+.barra .texto{
+    margin-right: 20px;
+}
+.fondo{
+    width: 100%;
+    height:80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.botones{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 0px;
+    justify-content: space-between;
+    position: relative;
+    top: 60px;
+}
+.bg1{
+    background: url(img/pexels-photo-753626.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no;
+    transition: 1s all;
+}
+.bg2{
+    background: url(img/pexels-photo-450441.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no;
+    transition: 1s all;
+}
+.bg3{
+    background: url(img/pexels-photo-772665.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no;
+    transition: 1s all;
+}
+.botones button.active{
+    color: white;
+    background: rgb(21, 150, 100);
+}
+.botones button{
+    color: white;
+    background: rgba(252, 252, 252, 0.26);
+}
+.botones button{
+    border: none;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 8px;
+    outline: none;
+}
+
+.do{
+    position: relative;
+    top: -40px;
+    width: 80%;
+    margin: 0% 10%;
+}
+.do h2{
+    font-size: 40px;
+    text-shadow: 1px 2px 3px rgb(0, 0, 0);
+}
+.do h5{
+    text-shadow: 2px 3px 4px rgb(0, 0, 0);  
+}
+.ibfo button{
+    color: white;
+    font-weight: 700;
+    text-shadow: 2px 3px 4px rgb(0, 0, 0);  
+    border: white 3px solid;
+    outline: none;
+}
+button.ds{
+    margin-right: 5px;
+}
+.ibfo button:hover, button.ds{
+    color: rgb(255, 255, 255);
+    background: rgb(21, 150, 100);
+    font-weight: 700;
+    text-shadow: none;  
+    border:rgb(21, 150, 100) 3px solid;
+}
+
+.nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+.logo{
+    margin-right: 10px;
+    color: rgb(4, 6, 20);
+}
+.navbar a{
+    margin-left: 8px;
+    text-decoration: none;
+    color:rgb(4, 6, 20);
+    font-weight: 600;
+}
+.green{
+    color: rgb(21, 150, 100) ;
+}
+a.green{
+    color: rgb(21, 150, 100) ;
+}
+
+.hide{
+    display: none;
+}
+.imgchange{
+    transition: 1s all;
+    animation: 1s ani all;
+}
+
+@keyframes ani{
+    0%{
+        opacity: 0;
+        background-size: 200%;
+    }
+    100%{
+        opacity: 0;
+        background-size: cover;
+    }
+}
+
+.formulario{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    
+    padding: 20px;
+    width: 80%;
+    margin: 0 10%;
+}
+.seccion{
+    background:rgb(4, 6, 20);
+}
+.legenda h4{
+    display: flex;
+    flex-direction: column;
+    color: white;
+   
+}
+.legenda{
+    margin: 0 50px;
+
+}
+.legenda h4 span{
+    color: rgb(63, 63, 63); 
+}
+
+.form form{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap; 
+    align-items: center; 
+}
+.item2{
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap; 
+    align-items: center;   
+}
+@media(max-width:1352px){
+    button.submit{
+        margin-top: 20px;
+    }
+    .item2{
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: wrap; 
+        align-items: center;  
+    }
+    .form form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: wrap; 
+        align-items: center; 
+    }
+    .legenda{
+        margin: 0 30px;
+    
+    }
+   
+}
+@media(min-width:1358px){
+    .item2 input{
+        border: none;
+        outline: none;
+        padding: 10px;
+        font-size: 18px;
+        margin-top: 10px;
+    }
+    button.submit{
+        margin-top: 10px;
+    }
+    .item2 input{
+        border: none;
+        outline: none;
+       
+        padding: 2px;
+        font-size: 18px;
+        
+    }
+    
+}
+
+.item2 input{
+    border: none;
+    outline: none;
+   
+    padding: 10px;
+    font-size: 18px;
+    
+}
+.addone{
+    color: black;
+    background: white;
+}
+button.submit{
+    background:rgb(21, 150, 100) ;
+    color: white;
+}
+.linea{
+    content: "";
+    background: rgba(255, 255, 255, 0.281);
+    margin: 0;
+    width: 80px;
+    height: 5px;
+    transform: rotate(90deg);
+}
+
+input::before{
+
+    background: red;
+    width: 10px;
+    height: 20px;
+}
+.grande{
+    background-size: 100%;
+}
+.offers{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.description{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 15px;
+  
+}
+.offer{
+    width: calc(400px - 25px);
+    margin: 10px;
+    cursor: pointer;
+    background: rgba(223, 223, 223, 0.336);
+}
+.offer:hover{
+    background: rgb(4, 6, 20);  
+    color: white;  
+    -webkit-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.37); 
+box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.37);
+    transition: 1s all;
+}
+.info h6{
+    color: rgb(145, 145, 145);
+}
+
+.offer img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+.arrow{
+    margin-top: 10px;
+    margin-right: 15px;
+}
+.display{
+    display: block;
+}
+
