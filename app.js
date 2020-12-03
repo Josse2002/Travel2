@@ -69,7 +69,25 @@
      
       
     });
-    
+
+
+
+    var input = $('.buscarr');
+    var lupa = $('#submit');
+
+    input.hide();
+
+    lupa.click(function (e) { 
+      e.preventDefault();
+      input.toggle('fast');
+      $('#icono').toggleClass('fa-times').fadeIn('fast');;
+      
+      
+      input.addClass('anim');
+
+    });
+
+
 
     
 
